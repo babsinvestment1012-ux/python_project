@@ -1,0 +1,62 @@
+<html>
+<head>
+<title>phonenumber.py</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #bcbec4;}
+.s1 { color: #bcbec4;}
+.s2 { color: #6aab73;}
+.s3 { color: #7a7e85;}
+.s4 { color: #cf8e6d;}
+</style>
+</head>
+<body bgcolor="#1e1f22">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+phonenumber.py</font>
+</center></td></tr></table>
+<pre><span class="s0">f </span><span class="s1">= </span><span class="s0">open</span><span class="s1">(</span><span class="s2">'/Users/babs/Documents/listnum1.txt'</span><span class="s1">, </span><span class="s2">'r'</span><span class="s1">)</span>
+<span class="s0">f2 </span><span class="s1">= </span><span class="s0">open</span><span class="s1">(</span><span class="s2">'/Users/babs/Documents/listnum2'</span><span class="s1">, </span><span class="s2">'r'</span><span class="s1">)</span>
+<span class="s0">f1_data</span><span class="s1">=</span><span class="s0">f</span><span class="s1">.</span><span class="s0">readlines</span><span class="s1">()</span>
+<span class="s0">f2_data</span><span class="s1">=</span><span class="s0">f2</span><span class="s1">.</span><span class="s0">readlines</span><span class="s1">()</span>
+<span class="s3"># print(f1_data)</span>
+<span class="s3"># print(f2_data)</span>
+<span class="s4">for </span><span class="s0">i </span><span class="s4">in </span><span class="s0">f1_data</span><span class="s1">:</span>
+    <span class="s4">if </span><span class="s0">i </span><span class="s4">in </span><span class="s0">f2_data</span><span class="s1">:</span>
+        <span class="s4">pass</span>
+    <span class="s4">else</span><span class="s1">:</span>
+      <span class="s4">with </span><span class="s0">open</span><span class="s1">(</span><span class="s2">'savefile.txt'</span><span class="s1">,</span><span class="s2">'a'</span><span class="s1">)</span><span class="s4">as </span><span class="s0">j</span><span class="s1">:</span>
+          <span class="s0">j</span><span class="s1">.</span><span class="s0">write</span><span class="s1">(</span><span class="s0">i</span><span class="s1">+</span><span class="s2">'</span><span class="s4">\n</span><span class="s2">'</span><span class="s1">)</span>
+
+
+
+
+<span class="s3"># closing files</span>
+<span class="s0">f</span><span class="s1">.</span><span class="s0">close</span><span class="s1">()</span>
+<span class="s0">f2</span><span class="s1">.</span><span class="s0">close</span><span class="s1">()</span>
+
+
+<span class="s3"># readfile=open('/Users/babs/Documents/zen2.txt','r')</span>
+<span class="s3"># for line in readfile:</span>
+<span class="s3">#     print(line,end='')</span>
+<span class="s3"># readfile=open('/Users/babs/Documents/zen.txt','r')</span>
+<span class="s3"># for line in readfile:</span>
+<span class="s3">#     if line.startswith('Beautiful') is True:</span>
+<span class="s3">#         with open('/Users/babs/Documents/answer.txt','a') as File:</span>
+<span class="s3">#             File.write(line)</span>
+
+
+<span class="s3"># f = open('/Users/babs/Documents/listnum1.txt', 'r')</span>
+<span class="s3"># f2 = open('/Users/babs/Documents/listnum2', 'r')</span>
+<span class="s3"># f1_data=f.readlines()</span>
+<span class="s3"># f2_data=f2.readlines()</span>
+<span class="s3"># print(f1_data)</span>
+<span class="s3"># print(f2_data)</span>
+<span class="s3"># for element in f1_data:</span>
+<span class="s3">#     if element not in f2_data:</span>
+<span class="s3">#</span>
+
+</pre>
+</body>
+</html>

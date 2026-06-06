@@ -1,0 +1,6 @@
+nums = (12,34,50,40,60,90)
+print(nums)
+print(nums[4])
+tup = (2,43,60,40,10,90)
+print(tup[5])
+print(tup.count)
